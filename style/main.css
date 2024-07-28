@@ -1,0 +1,100 @@
+main {
+  width: 100%;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4901960784);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#hero .background-image {
+  background-image: url("../img/hero-main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: bottom;
+}
+#hero button {
+  border: 3px solid white;
+  color: white;
+  border-radius: 42px;
+  background-color: transparent;
+  width: 217px;
+  height: 41px;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#hero button:hover {
+  background-color: white;
+  color: black;
+}
+
+#who-we {
+  padding: 120px 0;
+}
+#who-we .container {
+  max-width: 1150px;
+  margin: auto;
+}
+#who-we .container h3 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+#who-we .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#who-we .container .row .col-1 {
+  width: 57%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#who-we .container .row .col-2 {
+  width: 43%;
+  padding-left: 40px;
+}
+#who-we .container .row .col-2 .img {
+  width: 100%;
+  height: 525px;
+  background-image: url("../img/operators.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}
+
+#quote {
+  padding: 50px;
+  text-align: center;
+  background-color: #1F2838;
+}
+#quote p {
+  font-weight: 700;
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+}
