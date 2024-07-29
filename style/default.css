@@ -22,7 +22,7 @@ h4 {
   font-weight: 700;
 }
 
-span {
+span, p {
   font-size: 16px;
   font-weight: 400;
   line-height: 19.5px;

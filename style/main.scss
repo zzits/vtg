@@ -52,6 +52,9 @@ main{
                 width: 57%;
                 display: flex;
                 flex-direction: column;
+                span{
+                    text-align: justify;
+                }
             }
             .col-2{
                 width: 43%;
@@ -77,5 +80,76 @@ main{
         color: white;
         font-size: 20px;
         line-height: 25px;
+    }
+}
+#services{
+    text-align: center;
+    padding: 105px 0;
+    .container{
+        max-width: 1080px;
+        margin: auto;
+        .row{
+            display: flex;
+            margin-top: 50px;
+        }
+        .col{
+            flex: 1;
+            padding-top: 25px;
+            padding-bottom: 50px;
+            p{
+                text-align: justify !important;
+            }
+            h4{
+                height: 40px;
+                margin-bottom: 15px;
+            }
+            img{
+                height: 95px;
+                margin-bottom: 15px;
+            }
+        }
+        .middle-col{
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .col:first-child{
+            padding-right: 40px;
+        }
+        .col:last-child{
+            padding-left: 40px;
+        }
+    }
+}
+#gallery{
+    padding: 100px 0;
+    text-align: center;
+    .splide{
+        margin-top: 150px;
+        height: 338px;
+        .splide__slide{
+            display: flex;
+            justify-content: center;
+            width: 421px;
+            // height: 338px;
+
+            // margin-right: 5%;
+            padding: 0 30px;
+            img{
+                transition: 0.5s;
+                width: 100%;
+            }
+            
+        }
+        .is-active{
+            img {
+                transform: scale(1.2);
+
+            }
+        }
+        .splide__track{
+            overflow: visible;
+        }
     }
 }

@@ -75,6 +75,9 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+#who-we .container .row .col-1 span {
+  text-align: justify;
+}
 #who-we .container .row .col-2 {
   width: 43%;
   padding-left: 40px;
@@ -97,4 +100,80 @@ main {
   color: white;
   font-size: 20px;
   line-height: 25px;
+}
+
+#services {
+  text-align: center;
+  padding: 105px 0;
+}
+#services .container {
+  max-width: 1080px;
+  margin: auto;
+}
+#services .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+#services .container .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+#services .container .col p {
+  text-align: justify !important;
+}
+#services .container .col h4 {
+  height: 40px;
+  margin-bottom: 15px;
+}
+#services .container .col img {
+  height: 95px;
+  margin-bottom: 15px;
+}
+#services .container .middle-col {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#services .container .col:first-child {
+  padding-right: 40px;
+}
+#services .container .col:last-child {
+  padding-left: 40px;
+}
+
+#gallery {
+  padding: 100px 0;
+  text-align: center;
+}
+#gallery .splide {
+  margin-top: 150px;
+  height: 338px;
+}
+#gallery .splide .splide__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 421px;
+  padding: 0 30px;
+}
+#gallery .splide .splide__slide img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 100%;
+}
+#gallery .splide .is-active img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+#gallery .splide .splide__track {
+  overflow: visible;
 }

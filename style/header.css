@@ -35,6 +35,9 @@ header .container .nav a {
   text-decoration: none;
   color: white;
 }
+header .container .nav p {
+  font-size: 12px;
+}
 header .container .options {
   display: -webkit-box;
   display: -ms-flexbox;

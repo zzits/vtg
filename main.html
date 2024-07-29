@@ -15,6 +15,10 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- slider -->
+    <link rel="stylesheet" href="style/splide.min.css">
+    <script src="js/splide.min.js"></script>
 </head>
 <body>
     <header>
@@ -94,6 +98,77 @@
         <section id="quote">
             <p>Инвестиции в поездки - это инвестиция в себя<br>МЭТТЬЮ КАРСТЕН</p>
         </section>
+        <section id="services">
+            <div class="container">
+                <h3>Наши услуги</h3>
+                <div class="row">
+                    <div class="col">
+                        <img src="img/hotel.svg" alt="">
+                        <h4>Аренда элитного жилья <br>в любой точке мира</h4>
+                        <p>Сотрудничаем с отелями, виллами апартаментами и другими VIP-размещениями. Наши клиенты наслаждаются жизнью по всему
+                        миру, диктуя свои правила комфорта.</p>
+                    </div>
+                    <div class="col middle-col">
+                        <img src="img/car.svg" alt="">
+                        <h4>Аренда автомобилей с водителями, яхт и других средств передвижения</h4>
+                        <p>Наши клиенты не стоят в пробках и не ищут такси в мегаполисах. Профессионалы встречают их около трапов или отелей и
+                        везут по нужному маршруту.</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/plane.svg " alt="">
+                        <h4>Бронирование перелетов первым<br> классом или аренда джетов</h4>
+                        <p>Сотрудничаем с отелями, апартаментами, виллами и другими VIP-размещениями. Наши клиенты наслаждаются жизнью по всему
+                        миру, диктуя свои правила комфорта.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="img/phone.svg" alt="">
+                        <h4>Планирование путешествий и командировок</h4>
+                        <p>От выхода из дома до радостных фотографий из поездки – организовываем все. Подбираем премиальное размещение, бронируем
+                        авиабилеты и досуг, даже заботимся о том, чтобы повар готовил ваши любимые блюда</p>
+                    </div>
+                    <div class="col middle-col">
+                        <img src="img/fast-track.svg    " alt="">
+                        <h4>Забота в аэропортах, трансферы и фаст-траки</h4>
+                        <p>Клиенты спешат, и мы помогаем им не опаздывать. Не стоят в очередях, не ждут регистрации или багажа. Они занимаются
+                        своими делами, пока мы заботимся о мелочах</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/tourism.svg " alt="">
+                        <h4>Оздоровительный туризм</h4>
+                        <p>Новое, но уже востребованное направление, которое оценили наши клиенты. Организуем профилактическое лечение, плановые
+                        операции или срочное обслуживание по всему миру</p>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <h3>Популярные направления</h3>
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="img/photo-1.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="img/photo-2.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="img/photo-3.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide',{
+            type: "loop",
+            pagination: false,
+            arrows: false,
+            // width: '100%',
+            focus: 'center',
+            perPage: 3,
+            trimSpace: 'move'
+        });
+        splide.mount();
+    });
+</script>
 </html>
