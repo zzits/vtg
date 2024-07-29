@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 main {
   width: 100%;
 }
@@ -162,18 +166,105 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 421px;
-  padding: 0 30px;
+  max-width: 600px;
 }
 #gallery .splide .splide__slide img {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   width: 100%;
+  z-index: 1;
+}
+#gallery .splide .splide__slide::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 2;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 #gallery .splide .is-active img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
+#gallery .splide .is-active::after {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 #gallery .splide .splide__track {
   overflow: visible;
+}
+
+#how-we-work {
+  text-align: center;
+  padding: 200px 0;
+}
+#how-we-work .description {
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-bottom: 120px;
+}
+#how-we-work .container {
+  max-width: 900px;
+  margin: auto;
+}
+#how-we-work .container .step {
+  position: relative;
+  height: 180px;
+}
+#how-we-work .container .step .number {
+  background-color: #1F2838;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+#how-we-work .container .step .text {
+  width: 45%;
+  text-align: justify;
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+#how-we-work .container .step .text.left {
+  margin-right: auto;
+}
+#how-we-work .container .step .text.right {
+  margin-left: auto;
+}
+#how-we-work .container .step .text:first-child, #how-we-work .container .step .text:last-child {
+  -webkit-transform: none;
+          transform: none;
+}
+#how-we-work .container .step::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: #1F2838;
+  top: 0;
+  left: 50%;
+  height: 180px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
