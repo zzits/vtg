@@ -1,0 +1,21 @@
+footer{
+    background-color: #1F2838;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    .container{
+        max-width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: justify;
+        color: white;
+        width: 100%;
+        .left-text{
+            max-width: 643px;
+            margin-right: 95px;
+        }
+    }
+}   

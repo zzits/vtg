@@ -1,6 +1,7 @@
 header {
   width: 100%;
   position: absolute;
+  z-index: 3;
 }
 header .container {
   max-width: 982px;

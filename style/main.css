@@ -200,7 +200,7 @@ main {
 
 #how-we-work {
   text-align: center;
-  padding: 200px 0;
+  padding: 200px 0 50px 0;
 }
 #how-we-work .description {
   margin-top: 20px;
@@ -253,9 +253,12 @@ main {
 #how-we-work .container .step .text.right {
   margin-left: auto;
 }
-#how-we-work .container .step .text:first-child, #how-we-work .container .step .text:last-child {
+#how-we-work .container .step:first-child .text, #how-we-work .container .step:last-child .text {
   -webkit-transform: none;
           transform: none;
+}
+#how-we-work .container .step:last-child::after {
+  display: none;
 }
 #how-we-work .container .step::after {
   content: "";
@@ -267,4 +270,14 @@ main {
   height: 180px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+#lands {
+  padding: 100px 0;
+  text-align: center;
+}
+#lands img {
+  margin-top: 80px;
+  max-width: 1170px;
+  width: 100%;
 }

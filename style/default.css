@@ -22,6 +22,12 @@ h4 {
   font-weight: 700;
 }
 
+h5 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+}
+
 span, p {
   font-size: 16px;
   font-weight: 400;
@@ -38,4 +44,12 @@ button {
 
 b {
   font-weight: 700 !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }

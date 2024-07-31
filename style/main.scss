@@ -169,7 +169,7 @@ main{
 }
 #how-we-work{
     text-align: center;
-    padding: 200px 0;
+    padding: 200px 0 50px 0;
     .description{
         margin-top: 20px;
         max-width: 800px;
@@ -211,9 +211,12 @@ main{
                 &.right{
                     margin-left: auto;
                 }
-                &:first-child,&:last-child{
-                    transform: none;
-                }
+            }
+            &:first-child .text,&:last-child .text{
+                transform: none;
+            }
+            &:last-child::after{
+                display: none;
             }
             &::after{
                 content: "";
@@ -227,5 +230,14 @@ main{
                 transform: translateX(-50%);
             }
         }
+    }
+}
+#lands{
+    padding: 100px 0;
+    text-align: center;
+    img{
+        margin-top: 80px;
+        max-width: 1170px;
+        width: 100%;
     }
 }
