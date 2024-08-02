@@ -175,21 +175,88 @@ main{
         margin-right: auto;
         .row{
             display: flex;
-            &+.img-right{
+            align-items: center;
+            margin-top: 45px;
+            position: relative;
+            &:first-child{
+                margin-top: 0;
+            }
+            &.img-right{
                 justify-content: right;
+                img{
+                    margin-left: 25px;
+                }
+                .text{
+                    &:before,
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        border: 1px solid #1F2838;
+                        width: calc(100% + 100px);
+                        height: calc(100% + 20px);
+                        top: -10px;
+                        left: -10px;
+                        box-sizing: border-box;
+                    }
+                    &:after {
+                        top: -25px;
+                        left: -20px;
+                    }
+                }
+            }
+            &.img-left{
+                justify-content: left;
+                img{
+                    margin-right: 25px;
+                }
+                .text{
+                    &:before,
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        border: 1px solid #1F2838;
+                        border-right: 0;
+                        width: calc(100% + 60px);
+                        height: calc(100% + 20px);
+                        top: -10px;
+                        left: -20px;
+                        box-sizing: border-box;
+                    }
+                    &:after {
+                        top: -25px;
+                        left: -30px;
+                        width: calc(100% + 70px);
+                        height: calc(100% + 20px);
+                    }
+                    .top-line,.bottom-line{
+                        width: 1px;
+                        height: 100%;
+                        border-right: 1px solid #1F2838;
+                        position: absolute;
+                    }
+                    .top-line{
+                        top: calc(0px - 100% - 25px);
+                        right: calc(-70px + 30px);
+                    }
+                    .bottom-line{
+                        top: calc(100% - 5px);
+                        right: calc(-70px + 30px);
+                    }
+                }
             }
             .text{
                 max-width: 620px;
-                &:before,
-                &:after {
-                    content: "";
-                    position: absolute;
-                    border: 1px solid black;
-                    width: calc(100% + 40px);
-                    height: calc(100% + 40px);
-                    top: -20px;
-                    left: -20px;
+                height: 212px;
+                padding: 34px 0 0 16px ;
+                position: relative;
+                box-sizing: border-box;
+                h4{
+                    margin-bottom: 20px;
                 }
+            }
+            img{
+                z-index: 2;
+                
             }
         }
     }
@@ -260,7 +327,7 @@ main{
     }
 }
 #lands{
-    padding: 100px 0;
+    padding: 150px 0;
     text-align: center;
     img{
         margin-top: 80px;
