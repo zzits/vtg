@@ -66,6 +66,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 60px;
+  padding: 0 20px;
 }
 #about .container .row .right-gap {
   margin-right: 65px;
@@ -87,7 +88,7 @@
   font-weight: 700;
   font-size: 36px;
 }
-#about .container .amenities-and-services .row-gallery {
+#about .container .amenities-and-services .row-amenities-and-services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,101 +97,140 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
-#about .container .amenities-and-services .row-gallery .img {
-  width: 380px;
-  height: 230px;
-  margin-bottom: 15px;
-  margin-right: 15px;
-  background-position: center;
-  background-size: cover;
-}
-#about .container .amenities-and-services .row-gallery .img:last-child {
-  margin-right: 0;
-}
-#about .container .description h5 {
-  font-weight: 700;
-  margin-bottom: 90px;
-  margin-top: 10px;
-}
-#about .container .description .row-description {
+#about .container .amenities-and-services .row-amenities-and-services .el {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 57px;
+  text-align: center;
 }
-#about .container .description .row-description .text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding-right: 40px;
-  text-align: justify;
+#about .container .amenities-and-services .row-amenities-and-services .el img {
+  margin-bottom: 8px;
 }
-#about .container .description .row-description img {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+#about .container .amenities-and-services hr {
+  margin-top: 0;
+  margin-bottom: 50px;
 }
-#about .container .description .transport {
-  margin-top: 42px;
+#about .container .gallery .title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.88px;
 }
-
-.apartments {
-  overflow: hidden;
-  padding-bottom: 170px;
+#about .container .gallery .grid-gallery {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 25px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
+          column-gap: 25px;
+  max-width: 1051px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.apartments .row-apartments {
+#about .container .gallery .grid-gallery .fr {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#about .container .gallery hr {
+  margin: 50px 0;
+}
+#about .container .rating-section {
+  padding: 0 20px;
+}
+#about .container .rating-section .title {
+  font-size: 36px;
+  font-weight: 700;
+}
+#about .container .rating-section .inner-container {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#about .container .rating-section .inner-container .rating {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#about .container .rating-section .inner-container .rating h1 {
+  margin-right: 40px;
+}
+#about .container .rating-section .inner-container .reviews {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#about .container .rating-section .inner-container .reviews .review {
+  padding: 20px 20px 0 20px;
+  width: 300px;
+  height: 164px;
+  background: #F3F3F3;
+  border-radius: 13px;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#about .container .rating-section .inner-container .reviews .review .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+#about .container .rating-section .inner-container .reviews .review .user-info .number-rating {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 58px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #D9D9D9;
+  font-weight: 500;
 }
-.apartments .row-apartments .parallelogram {
-  width: 630px;
-  height: 767px;
-  -webkit-transform: skew(-10deg);
-          transform: skew(-10deg);
-  background: black;
-  overflow: hidden;
-  position: relative;
-  margin-right: 30px;
-  cursor: pointer;
-}
-.apartments .row-apartments .parallelogram img {
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  -webkit-transform: skew(10deg) translateX(-50%);
-          transform: skew(10deg) translateX(-50%);
-  height: 100%;
-  z-index: 1;
-  position: absolute;
-  left: 50%;
-}
-.apartments .row-apartments .parallelogram .shadow {
-  background-color: rgba(0, 0, 0, 0.2588235294);
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.apartments .row-apartments .parallelogram .text-right {
-  text-shadow: 0px 0px 20px #000000;
-  position: absolute;
-  top: 50px;
-  right: 70px;
-  color: white;
-  z-index: 3;
+#about .container .rating-section .inner-container .reviews .review .user-info .name {
   font-size: 16px;
-  font-weight: 700;
-  -webkit-transform: skew(10deg);
-          transform: skew(10deg);
-  -webkit-box-shadow: 20px;
-          box-shadow: 20px;
+  font-weight: 500;
 }
-.apartments .row-apartments .parallelogram:hover img {
-  -webkit-transform: skew(10deg) translateX(-50%) scale(1.2);
-          transform: skew(10deg) translateX(-50%) scale(1.2);
+#about .container .rating-section .inner-container .reviews .review .text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 15.85px;
 }

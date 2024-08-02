@@ -167,6 +167,33 @@ main{
         }
     }
 }
+#at-your-service{
+    .container{
+        margin-top: 30px;
+        max-width: 1138px;
+        margin-left: auto;
+        margin-right: auto;
+        .row{
+            display: flex;
+            &+.img-right{
+                justify-content: right;
+            }
+            .text{
+                max-width: 620px;
+                &:before,
+                &:after {
+                    content: "";
+                    position: absolute;
+                    border: 1px solid black;
+                    width: calc(100% + 40px);
+                    height: calc(100% + 40px);
+                    top: -20px;
+                    left: -20px;
+                }
+            }
+        }
+    }
+}
 #how-we-work{
     text-align: center;
     padding: 200px 0 50px 0;
