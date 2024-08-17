@@ -1,26 +1,15 @@
 footer {
   background-color: #1F2838;
-  height: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 footer .container {
   max-width: 1140px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
   text-align: justify;
   color: white;
   width: 100%;
@@ -28,4 +17,53 @@ footer .container {
 footer .container .left-text {
   max-width: 643px;
   margin-right: 95px;
+}
+footer .container .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .container hr {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin: 0;
+}
+footer .container .links {
+  padding-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .container .links .col .title {
+  border-bottom: 1px solid white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+footer .container .links .col ul li {
+  margin-bottom: 11px;
+}
+footer .container .links .col ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .container .copyright {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 100px;
 }

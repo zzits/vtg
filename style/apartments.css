@@ -234,3 +234,39 @@
   font-weight: 300;
   line-height: 15.85px;
 }
+
+.bread-crumbs {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.bread-crumbs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bread-crumbs ul li {
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bread-crumbs ul li a {
+  color: black;
+  text-decoration: none;
+}
+.bread-crumbs ul li::before {
+  content: url(../img/arrow.svg);
+  width: 15px;
+  display: block;
+  margin-right: 20px;
+}
+.bread-crumbs ul li:first-child::before {
+  display: none;
+}
