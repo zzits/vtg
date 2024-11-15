@@ -1,29 +1,12 @@
-body {
-  overflow-x: hidden;
-}
-
-main {
-  width: 100%;
-}
-
 #hero {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4901960784);
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #hero .background-image {
   background-image: url("../img/hero-main.jpg");
@@ -45,7 +28,6 @@ main {
   font-weight: 400;
   font-size: 24px;
   margin-top: 50px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 #hero button:hover {
@@ -65,20 +47,13 @@ main {
   margin-bottom: 70px;
 }
 #who-we .container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: justify;
 }
 #who-we .container .row .col-1 {
   width: 57%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 #who-we .container .row .col-1 span {
   text-align: justify;
@@ -110,15 +85,9 @@ main {
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #services {
@@ -130,15 +99,11 @@ main {
   margin: auto;
 }
 #services .container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
 }
 #services .container .col {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   padding-top: 25px;
   padding-bottom: 50px;
 }
@@ -175,16 +140,11 @@ main {
   height: 338px;
 }
 #gallery .splide .splide__slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   max-width: 600px;
 }
 #gallery .splide .splide__slide img {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 100%;
   z-index: 1;
@@ -197,17 +157,14 @@ main {
   z-index: 2;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.4);
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 #gallery .splide .is-active img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 #gallery .splide .is-active::after {
   background-color: rgba(0, 0, 0, 0);
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 #gallery .splide .splide__track {
   overflow: visible;
@@ -220,12 +177,8 @@ main {
   margin-right: auto;
 }
 #at-your-service .container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 45px;
   position: relative;
 }
@@ -233,9 +186,7 @@ main {
   margin-top: 0;
 }
 #at-your-service .container .row.img-right {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  justify-content: right;
 }
 #at-your-service .container .row.img-right img {
   margin-left: 25px;
@@ -248,8 +199,7 @@ main {
   height: calc(100% + 20px);
   top: -10px;
   left: -10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   z-index: -1;
 }
 #at-your-service .container .row.img-right .text:after {
@@ -257,9 +207,7 @@ main {
   left: -20px;
 }
 #at-your-service .container .row.img-left {
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  justify-content: left;
 }
 #at-your-service .container .row.img-left img {
   margin-right: 25px;
@@ -273,8 +221,7 @@ main {
   height: calc(100% + 20px);
   top: -10px;
   left: -20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   z-index: -1;
 }
 #at-your-service .container .row.img-left .text:after {
@@ -302,8 +249,7 @@ main {
   height: 212px;
   padding: 34px 0 0 16px;
   position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 #at-your-service .container .row .text h4 {
   margin-bottom: 20px;
@@ -339,27 +285,19 @@ main {
   font-weight: 700;
   width: 45px;
   height: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 1;
 }
 #how-we-work .container .step .text {
   width: 45%;
   text-align: justify;
-  -webkit-transform: translateY(-15%);
-          transform: translateY(-15%);
+  transform: translateY(-15%);
 }
 #how-we-work .container .step .text.left {
   margin-right: auto;
@@ -368,8 +306,7 @@ main {
   margin-left: auto;
 }
 #how-we-work .container .step:first-child .text, #how-we-work .container .step:last-child .text {
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 #how-we-work .container .step:last-child::after {
   display: none;
@@ -382,8 +319,7 @@ main {
   top: 0;
   left: 50%;
   height: 180px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 #lands {
@@ -395,3 +331,5 @@ main {
   max-width: 1170px;
   width: 100%;
 }
+
+/*# sourceMappingURL=main.css.map */

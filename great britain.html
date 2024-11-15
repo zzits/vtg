@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Britain</title>
+
+    <!-- global styles -->
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/default.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+
+    <!-- components -->
+    <link rel="stylesheet" href="style/components/quote.css">
+    
+    <!-- individual styles -->
+    <link rel="stylesheet" href="style/country.css">
+
+    <!-- fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- slider -->
+    <link rel="stylesheet" href="style/splide.min.css">
+    <script src="js/splide.min.js"></script>
+</head>
+<style>
+    .splide__slide {
+  position: relative;
+  text-align: left;
+        display: flex;
+        width: fit-content !important  ;
+}
+
+.slide-title {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  color: white;
+}
+.splide__slide img{
+    width: 355px;
+}
+.splide__slide .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2F2E2E;
+filter: blur(12.5px);
+    z-index: -1;
+}
+.splide__arrow--prev {
+  background: none;
+        transform: scale(150%) translate(-30px);
+
+
+}
+.splide__track{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.splide__arrow--next {
+  background: none;
+    transform: scale(150%) translate(30px);
+}
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <a href="main.html">ГЛАВНАЯ</a>
+                <a href="#">О НАС</a>
+                <input type="checkbox" id="input-countries" class="dropdown-input">
+                <label for="input-countries" class="dropdown">
+                    <p>КОНТИНЕНТЫ</p>
+                    <div class="dropdown-content">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                    </div>
+                </label>
+                <input type="checkbox" id="input-services" class="dropdown-input">
+                <label for="input-services" class="dropdown">
+                    <p>УСЛУГИ</p>
+                    <div class="dropdown-content">
+                        <a href="#">fdasfas</a>
+                        <a href="#">fdasfa</a>
+                        <a href="#">afda</a>
+                        <a href="#">dfasdfasfdaf</a>
+                        <a href="#">dfasdfasfdafjashjfdhasjfdh</a>
+                    </div>
+                </label>
+                <a href="#">КОНТАКТЫ</a>
+            </div>
+            <div class="options">
+                <button id="search"><img src="img/search.svg" alt="search" width="16"></button>
+                <button id="language">RUS</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="background-image" style="background-image: url(img/great-britain-hero.jpg  );"></div>
+            <div class="container">
+                <h2 class="text-center">ВЕЛИКОБРИТАНИЯ</h2>
+            </div>
+        </section>
+        <section class="bread-crumbs">
+            <ul>
+                <li><a href="main.html">ГЛАВНАЯ</a></li>
+                <li><a href="#">ВЕЛИКОБРИТАНИЯ</a></li>
+            </ul>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h5 class="text-left" style="max-width: 982px;margin-right: auto;margin-left: auto;margin-bottom:80px;">Великобритания — страна, сочетающая в себе величие древней истории и инновационный дух современности. Ее уникальность заключается в невероятном разнообразии, которое удивляет путешественников на каждом шагу.</h5>
+                <div class="row">
+                    <div class="text right-gap">
+                        <p class="text-justify" style="font-size: 20px !important;line-height: 24px!important;">
+                            <b>Историческое наследие и культура</b><br>
+                            Каждый уголок Великобритании дышит историей. Лондон, со своими королевскими дворцами, величественным Биг-Беном и Тауэрским мостом, является символом монархии и традиций. Но стоит отъехать немного от столицы, как вы окажетесь в старинных городах, таких как Йорк с его средневековыми стенами и Эдинбург с его величественным замком, стоящим на скале. Британские университетские города — Оксфорд и Кембридж — воплощают многовековые традиции образования и науки.<br><br>
+                            <b>Природные красоты и ландшафты</b><br>
+                            Природа Великобритании поражает своими контрастами: от зелёных холмов Уэльса до величественных Шотландских высокогорий. Любители природы найдут здесь всё — от прогулок по берегам Лейк-Дистрикта, национального парка с кристально чистыми озёрами и живописными горами, до дикого и первозданного ландшафта Корнуолла на юго-западе страны. А Стоунхендж, древнее мегалитическое сооружение, продолжает манить исследователей своими загадками.
+                        </p>
+                    </div>
+                    <div class="img" style="background-image: url(img/great-britain-1.jpg); min-width: 380px; height: 380px;margin-left: 25px;"></div>
+                </div>
+                <div class="row" style="margin-top: 60px;">
+                    <div class="img right-gap" style="background-image: url(img/great-britain-2.jpg); min-width: 380px; height: 380px;margin-right: 40px;margin-left: 20px;"></div>
+                    <div class="text">
+                        <p class="text-justify"  style="font-size: 20px !important;line-height: 24px!important;">
+                            <b>Современность и стиль</b><br>
+                            Великобритания — это не только традиции, но и олицетворение современности. Вибрирующая ночная жизнь Лондона, модные районы, такие как Шордич, и передовые театральные постановки на Вест-Энде — все это привлекает тех, кто ищет новизну и современную культуру. Британская музыкальная и киноиндустрия подарили миру многие шедевры, которые продолжают вдохновлять людей по всему миру.<br><br>
+                            <b>Многогранная культура и гастрономия</b><br>
+                            Великобритания — это настоящий калейдоскоп культур. Каждая её часть уникальна: Шотландия славится своими виски и национальными праздниками, Уэльс удивляет замками и живописными долинами, а Англия — родина величайших писателей, таких как Шекспир. Гастрономическая сцена страны за последние годы претерпела изменения, и теперь здесь можно найти рестораны с кухней мирового уровня, а также традиционные британские блюда, такие как рыба с картошкой или воскресный ростбиф.
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 60px;">
+                    <h5 class="text-justify" style="margin-left: auto;margin-right: auto;max-width: 987px;">
+                        <b>Почему стоит посетить Великобританию?</b><br>
+                        Почему стоит посетить Великобританию?
+Великобритания — это не просто место, это впечатления. Здесь можно за один день прогуляться по живописным паркам, исследовать старинные замки, насладиться произведениями искусства в музеях мирового уровня и завершить вечер ужином в уютном ресторане на берегу Темзы. Великобритания — это страна, где переплетаются традиции и современность, история и инновации, природа и культура. Именно это делает её по-настоящему уникальной и желанной для путешественников со всего мира.
+                    </h5>
+                </div>
+                <div class="gallery" style="margin-top: 90px;">
+                    <div class="row-gallery">
+                        <div class="img" style="background-image: url(img/great-britain-3.jpg);"></div>
+                        <div class="img" style="background-image: url(img/great-britain-4.jpg);"></div>
+                        <div class="img" style="background-image: url(img/great-britain-5.jpg);"></div>
+                    </div>
+                    <div class="row-gallery">
+                        <div class="img" style="background-image: url(img/great-britain-6.jpg);"></div>
+                        <div class="img" style="background-image: url(img/great-britain-7.jpg);"></div>
+                    </div>
+                </div>
+                <div class="description">
+                    <h5 class="text-center">Погрузитесь в удивительный мир Великобритании вместе с нами и позвольте себе насладиться всеми гранями её уникальности!</h5>
+                </div>
+            </div>
+        </section>
+        <section id="quote">
+            <div class="container">
+                <div class="col"><p><b>Наши операторы доступны 24/7:</b></p></div>
+                <div class="col"><h5>+442038681146 (WhatsApp)</h5><h5>EMAIL: info@viptourlondon.com</h5></div>
+            </div>
+        </section>
+        <section id="best-apartments" style="padding: 100px 0 120px 0;">
+            <h2 class="text-center">ЛУЧШИЕ ОТЕЛИ <br> ВЕЛИКОБРИТАНИИ</h2>
+            <div class="container" style=" max-width: 1320px; margin: auto; margin-top:90px">
+            <div id="image-slider" class="splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                      <div class="bg"></div>
+                    <img src="img/great-britain-8.jpg" alt="Raffles the OWO">
+                    <h5 class="slide-title">Raffles <br> the OWO</h5>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg"></div>
+                    <img src="img/great-britain-9.jpg" alt="Royal Lancaster London">
+                    <h5 class="slide-title">Royal Lancaster <br> London</h5>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg"></div>
+                    <img src="img/great-britain-10.jpg" alt="The Peninsula London">
+                    <h5 class="slide-title">The Peninsula <br> London</h5>
+                  </li>
+                    <li class="splide__slide">
+                        <div class="bg"></div>
+                    <img src="img/great-britain-11.jpg" alt="The Peninsula London">
+                    <h5 class="slide-title">The Westin <br> London City</h5>
+                  </li>
+                    <li class="splide__slide">
+                        <div class="bg"></div>
+                    <img src="img/great-britain-12.jpg" alt="The Peninsula London">
+                    <h5 class="slide-title">The <br>Dorchestern</h5>
+                  </li>
+                    <li class="splide__slide">
+                        <div class="bg"></div>
+                    <img src="img/great-britain-13.jpg" alt="The Peninsula London">
+                    <h5 class="slide-title">The Landmark <br> London</h5>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+            <div class="container">
+                <div class="questions">
+                    <div class="left-text">
+                        <b>Остались вопросы или вы сомневаетесь, реализуемо ли ваше желание?</b>
+                        <p>Оставьте свои данные и премиум-ассистент свяжется с вами в течение нескольких минут. Всего пара фраз,
+                            и вы поймете – мы
+                            можем то, на что остальные говорят «невозможно».</p>
+                    </div>
+                    <div class="right-text">
+                        <p>Наши операторы доступны 24/7: +442038681146<br> EMAIL: info@viptourlondon.com</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="links">
+                    <div class="col">
+                        <span class="title">Наши 24/7 контакты:</span>
+                        <ul>
+                            <li><a href="tel:+442038681146">+442038681146</a></li>
+                            <li><a href="mailto:info@viptourlondon.com">info@viptourlondon.com</a></li>
+                            <li><a href="">207 Regent Str, London, UK</a></li>
+                            <li><a href="">IATA Accredited: 96046193</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <span class="title">Континенты</span>
+                        <ul>
+                            <li><a href="">Европа</a></li>
+                            <li><a href="">Азия</a></li>
+                            <li><a href="">Африка</a></li>
+                            <li><a href="">Южная Америка</a></li>
+                            <li><a href="">Северная Америка</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <span class="title">Услуги</span>
+                        <ul>
+                            <li><a href="">Индивидуальные путешествия</a></li>
+                            <li><a href="">Премиальное размещение</a></li>
+                            <li><a href="">Частные перелеты</a></li>
+                            <li><a href="">Трансфер и аренда авто</a></li>
+                            <li><a href="">Аренда яхт</a></li>
+                            <li><a href="">ВИП-консьерж</a></li>
+                            <li><a href="">ВИП-услуги в аэропортах, фаст трак</a></li>
+                            <li><a href="">Оздоровительный туризм</a></li>
+                            <li><a href="">Эксклюзтвные покупки</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright text-center">
+                    <p>Copyright Limotis ©2024 All rights reserved</p>
+                </div>
+            </div>
+            </div>
+        </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide',{
+            type: "loop",
+            pagination: false,
+            arrows: true,
+            gap: "6%",
+            focus: 'center',
+            perPage: 3,
+        });
+        splide.mount();
+    });
+</script>
+</html>

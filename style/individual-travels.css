@@ -1,0 +1,65 @@
+#about {
+  padding: 50px 0 100px 0;
+}
+#about .container {
+  max-width: 1170px;
+  margin: auto;
+}
+#about .container .row {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+#about .container .row .right-gap {
+  margin-right: 65px;
+}
+#about .container .row .img {
+  min-width: 451px;
+  height: 426px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 42px 0px rgba(0, 0, 0, 0.75);
+}
+
+#plus {
+  padding: 120px 0;
+}
+#plus .container {
+  max-width: 1000px;
+  margin: auto;
+}
+#plus .container h2 {
+  margin-bottom: 40px;
+}
+
+.bread-crumbs {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.bread-crumbs ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.bread-crumbs ul li {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.bread-crumbs ul li a {
+  color: black;
+  text-decoration: none;
+}
+.bread-crumbs ul li::before {
+  content: url(../img/arrow.svg);
+  width: 15px;
+  display: block;
+  margin-right: 20px;
+}
+.bread-crumbs ul li:first-child::before {
+  display: none;
+}
+
+/*# sourceMappingURL=individual-travels.css.map */
