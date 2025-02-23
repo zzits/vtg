@@ -1,7 +1,5 @@
 footer {
   background-color: #1F2838;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -19,16 +17,10 @@ footer .container .left-text {
   margin-right: 95px;
 }
 footer .container .questions {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-bottom: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 footer .container hr {
   position: absolute;
@@ -38,12 +30,8 @@ footer .container hr {
 }
 footer .container .links {
   padding-top: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 footer .container .links .col .title {
   border-bottom: 1px solid white;
@@ -67,3 +55,5 @@ footer .container .copyright {
   font-weight: 600;
   margin-top: 100px;
 }
+
+/*# sourceMappingURL=footer.css.map */

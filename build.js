@@ -24,23 +24,23 @@ const files = getHtmlFiles(searchDirs);
 console.log("files");
 console.log(files);
 
-// const componentsDir = "components";
-// const header = fs.readFileSync(`${componentsDir}/header.html`, "utf8");
-// const footer = fs.readFileSync(`${componentsDir}/footer.html`, "utf8");
+const componentsDir = "components";
+const header = fs.readFileSync(`${componentsDir}/header.html`, "utf8");
+const footer = fs.readFileSync(`${componentsDir}/footer.html`, "utf8");
 // const links = fs.readFileSync(`${componentsDir}/links.html`, "utf8");
 // const bread_crumbs = fs.readFileSync(`${componentsDir}/bread-crumbs.html`, "utf8");
 // const block_contacts = fs.readFileSync(`${componentsDir}/block-contacts.html`, "utf8");
 //
-// files.forEach((file) => {
-//   let content = fs.readFileSync(file, "utf8");
-//   content = content
-//       .replace(/<header[\s\S]*?<\/header>/gi, header)
-//       .replace(/<footer[\s\S]*?<\/header>/gi, footer)
-//       .replace(/<head[\s\S]*?<\/head>/gi, links)
-//       .replace(/<section class="bread-crumbs"[\s\S]*?<\/section>/gi, bread_crumbs)
-//       .replace(/<section id="quote"[\s\S]*?<\/section>/gi, block_contacts);
-//   fs.writeFileSync(file, content, "utf8");
-//   console.log(`Обновлен файл: ${file}`);
-// });
-//
-// console.log("HTML components updated!");
+files.forEach((file) => {
+  let content = fs.readFileSync(file, "utf8");
+  content = content
+      .replace(/<header[\s\S]*?<\/header>/gi, header)
+//       .replace(/<footer[\s\S]*?<\/footer>/gi, footer);
+// //       .replace(/<head[\s\S]*?<\/head>/gi, links)
+// //       .replace(/<section class="bread-crumbs"[\s\S]*?<\/section>/gi, bread_crumbs)
+// //       .replace(/<section id="quote"[\s\S]*?<\/section>/gi, block_contacts);
+  fs.writeFileSync(file, content, "utf8");
+  console.log(`Обновлен файл: ${file}`);
+});
+// //
+console.log("HTML components updated!");

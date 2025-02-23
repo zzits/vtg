@@ -3,19 +3,10 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4901960784);
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 #hero .background-image {
@@ -34,7 +25,6 @@
   width: 100%;
   height: 300px;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(255, 255, 255, 0)), color-stop(85%, rgba(255, 255, 255, 0.66)), to(rgb(255, 255, 255)));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.66) 85%, rgb(255, 255, 255) 100%);
 }
 #hero .container {
@@ -59,12 +49,8 @@
   margin-bottom: 50px;
 }
 #about .container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 60px;
   padding: 0 20px;
 }
@@ -77,8 +63,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  -webkit-box-shadow: 0px 0px 42px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 0px 42px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 42px 0px rgba(0, 0, 0, 0.75);
 }
 #about .container .amenities-and-services {
   margin-top: 60px;
@@ -89,29 +74,15 @@
   font-size: 36px;
 }
 #about .container .amenities-and-services .row-amenities-and-services {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
 #about .container .amenities-and-services .row-amenities-and-services .el {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 57px;
@@ -131,21 +102,15 @@
 }
 #about .container .gallery .grid-gallery {
   margin-top: 40px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 25px 1fr;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 20px;
-  -webkit-column-gap: 25px;
-     -moz-column-gap: 25px;
-          column-gap: 25px;
+  column-gap: 25px;
   max-width: 1051px;
   margin-left: auto;
   margin-right: auto;
 }
 #about .container .gallery .grid-gallery .fr {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 #about .container .gallery hr {
@@ -165,24 +130,16 @@
 }
 #about .container .rating-section .inner-container .rating {
   margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 #about .container .rating-section .inner-container .rating h1 {
   margin-right: 40px;
 }
 #about .container .rating-section .inner-container .reviews {
   margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 #about .container .rating-section .inner-container .reviews .review {
   padding: 20px 20px 0 20px;
@@ -190,18 +147,12 @@
   height: 164px;
   background: #F3F3F3;
   border-radius: 13px;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  box-sizing: border-box;
 }
 #about .container .rating-section .inner-container .reviews .review .user-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-left: 10px;
   margin-bottom: 15px;
 }
@@ -212,15 +163,9 @@
   font-size: 20px;
   font-weight: 400;
   margin-right: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #D9D9D9;
   font-weight: 500;
 }
@@ -240,22 +185,14 @@
   padding-left: 50px;
 }
 .bread-crumbs ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .bread-crumbs ul li {
   margin-right: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .bread-crumbs ul li a {
   color: black;
@@ -270,3 +207,5 @@
 .bread-crumbs ul li:first-child::before {
   display: none;
 }
+
+/*# sourceMappingURL=apartments.css.map */

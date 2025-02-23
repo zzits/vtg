@@ -3,19 +3,10 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4901960784);
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 #hero .background-image {
@@ -34,7 +25,6 @@
   width: 100%;
   height: 300px;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(255, 255, 255, 0)), color-stop(85%, rgba(255, 255, 255, 0.66)), to(rgb(255, 255, 255)));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.66) 85%, rgb(255, 255, 255) 100%);
 }
 #hero .container {
@@ -51,12 +41,8 @@
   margin: auto;
 }
 #about .container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 40px;
 }
 #about .container .row .right-gap {
@@ -76,14 +62,9 @@
   margin-bottom: 50px;
 }
 #about .container .gallery .row-gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 #about .container .gallery .row-gallery .img {
   width: 380px;
@@ -102,21 +83,15 @@
   margin-top: 10px;
 }
 #about .container .description .row-description {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 #about .container .description .row-description .text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   padding-right: 40px;
   text-align: justify;
 }
 #about .container .description .row-description img {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 #about .container .description .transport {
   margin-top: 42px;
@@ -127,19 +102,14 @@
   padding-bottom: 170px;
 }
 .apartments .row-apartments {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 58px;
 }
 .apartments .row-apartments .parallelogram {
   width: 630px;
   height: 767px;
-  -webkit-transform: skew(-10deg);
-          transform: skew(-10deg);
+  transform: skew(-10deg);
   background: black;
   overflow: hidden;
   position: relative;
@@ -147,10 +117,8 @@
   cursor: pointer;
 }
 .apartments .row-apartments .parallelogram img {
-  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  -webkit-transform: skew(10deg) translateX(-50%);
-          transform: skew(10deg) translateX(-50%);
+  transform: skew(10deg) translateX(-50%);
   height: 100%;
   z-index: 1;
   position: absolute;
@@ -173,14 +141,11 @@
   z-index: 3;
   font-size: 16px;
   font-weight: 700;
-  -webkit-transform: skew(10deg);
-          transform: skew(10deg);
-  -webkit-box-shadow: 20px;
-          box-shadow: 20px;
+  transform: skew(10deg);
+  box-shadow: 20px;
 }
 .apartments .row-apartments .parallelogram:hover img {
-  -webkit-transform: skew(10deg) translateX(-50%) scale(1.2);
-          transform: skew(10deg) translateX(-50%) scale(1.2);
+  transform: skew(10deg) translateX(-50%) scale(1.2);
 }
 
 .bread-crumbs {
@@ -188,22 +153,14 @@
   padding-left: 50px;
 }
 .bread-crumbs ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .bread-crumbs ul li {
   margin-right: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .bread-crumbs ul li a {
   color: black;
@@ -218,3 +175,5 @@
 .bread-crumbs ul li:first-child::before {
   display: none;
 }
+
+/*# sourceMappingURL=country.css.map */
