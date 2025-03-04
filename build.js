@@ -26,7 +26,7 @@ const componentsDir = "components";
 const header = fs.readFileSync(`${componentsDir}/header.html`, "utf8");
 const footer = fs.readFileSync(`${componentsDir}/footer.html`, "utf8");
 const links = fs.readFileSync(`${componentsDir}/head.html`, "utf8");
-// const bread_crumbs = fs.readFileSync(`${componentsDir}/bread-crumbs.html`, "utf8");
+const bread_crumbs = fs.readFileSync(`${componentsDir}/bread-crumbs.html`, "utf8");
 const block_contacts = fs.readFileSync(`${componentsDir}/block-contacts.html`, "utf8");
 //
 files.forEach((file) => {
@@ -35,7 +35,7 @@ files.forEach((file) => {
       .replace(/<header[\s\S]*?<\/header>/gi, header)
       .replace(/<footer[\s\S]*?<\/footer>/gi, footer)
       .replace(/<!-- global options -->[\s\S]*?<!--finish global options-->/gi, links)
-// //       .replace(/<section class="bread-crumbs"[\s\S]*?<\/section>/gi, bread_crumbs)
+      // .replace(/<section class="bread-crumbs"[\s\S]*?<\/section>/gi, bread_crumbs)
       .replace(/<section id="quote"[\s\S]*?<\/section>/gi, block_contacts);
   fs.writeFileSync(file, content, "utf8");
   console.log(`Обновлен файл: ${file}`);

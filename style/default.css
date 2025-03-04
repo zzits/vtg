@@ -79,7 +79,7 @@ b {
   text-decoration: none;
 }
 .bread-crumbs ul li::before {
-  content: url(../img/arrow.svg);
+  content: url(/img/arrow.svg);
   width: 15px;
   display: block;
   margin-right: 20px;
